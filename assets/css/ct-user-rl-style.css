@@ -1,0 +1,13 @@
+/* 
+* Plugin Styles
+*/
+.error-msg {
+	background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: #d9534f;
+}
+.asteric {
+	color: #d9534f;
+	font-weight: 700;
+}
