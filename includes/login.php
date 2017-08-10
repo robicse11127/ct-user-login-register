@@ -11,9 +11,8 @@ class Ct_User_Login {
 	}
 
 	public function ct_user_rl_login_form_shortcode() {
-		ob_start();
-		$this->reg_url = $reg_url;
-		$this->ct_user_rl_login_form($redirect);
+		ob_start();		
+		$this->ct_user_rl_login_form();
 		$this->ct_user_rl_form_validation();
 		return ob_get_clean();
 	}
@@ -34,7 +33,7 @@ class Ct_User_Login {
 	}
 
 	public function ct_user_rl_form_validation() {
-		if($_POST['submit'] ){
+		if( isset( $_POST['submit'] ) ){
 			$this->username = esc_attr($_POST['ct_username']);
 			$this->password = esc_attr($_POST['ct_password']);
 

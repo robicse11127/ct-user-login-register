@@ -67,7 +67,7 @@ class Ct_User_Registration {
 	}
 
 	public function ct_user_rl_form_validation() {
-		if( $_POST['submit'] ) {
+		if( isset( $_POST['submit'] ) ) {
 			$this->firstname 		= esc_attr($_POST['ct_firstname']);
 			$this->lastname 		= esc_attr($_POST['ct_lastname']);
 			$this->username 		= esc_attr($_POST['ct_username']);
