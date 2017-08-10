@@ -1,6 +1,33 @@
 /* 
 * Plugin Styles
 */
+
+/* Form Styles */
+.ct-user-registration-form input[type="text"],
+.ct-user-registration-form input[type="email"],
+.ct-user-registration-form input[type="password"],
+.ct-user-login-form input[type="text"],
+.ct-user-login-form input[type="email"],
+.ct-user-login-form input[type="password"] {
+	display: block;
+	width: 100%;
+}
+.ct-user-registration-form input[type="submit"],
+.ct-user-login-form input[type="submit"] {
+	background: #111;
+    color: #fff;
+    padding: 12px 30px;
+    line-height: 20px;
+    border: 0px;
+    transition: .3s;
+    margin-top: 10px;
+}
+.ct-user-registration-form input[type="submit"]:hover,
+.ct-user-login-form input[type="submit"]:hover {
+	color: #111;
+	background: #f9f9f9;
+}
+/* Error Message Styles */
 .error-msg {
 	background: #f9f9f9;
     padding: 15px;
